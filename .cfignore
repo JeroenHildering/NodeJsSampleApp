@@ -1,0 +1,6 @@
+manifest.yml
+.gitignore
+
+.vs/
+.vscode/
+node_modules

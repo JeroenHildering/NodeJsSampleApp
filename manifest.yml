@@ -1,0 +1,13 @@
+---
+applications:
+- name: nodejs-sample-app
+  memory: 32M
+  instances: 2
+  path: ./
+  host: nodejs-sample-app
+  command: node ./index.js
+  domain: apps.lab.devops.lol
+  stack: cflinuxfs2
+  buildpack: nodejs_buildpack
+  services:
+  - autoscaler
